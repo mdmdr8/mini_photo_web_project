@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My_photo_book</title>
+    <link rel="stylesheet" href="book.css/style.css" />
+    <link rel="stylesheet" href="book.css/side_bar.css" />
+    <link rel="stylesheet" href="book.css/slideshow.css" />
+    <link rel="stylesheet" href="book.css/footer.css" />
+    <link rel="stylesheet" href="book.css/product.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  </head>
+  <body>
+
+    <!----side bar ---->
+    <div class="sidebar-overlay">
+      <aside class="sidebar">
+        <ul class="sidebar-links">
+          <li><a href="" class="sidebar-link">Home</a></li>
+          <li><a href="" class="sidebar-link">Spring</a></li>
+          <li><a href="" class="sidebar-link">Summer</a></li>
+          <li><a href="" class="sidebar-link">Fall</a></li>
+          <li><a href="" class="sidebar-link">Winter</a></li>
+        </ul>
+      </aside>
+    </div>
+
+
+
+    <div class="body_wrapper">
+      <div class="body_content">
+        <!--nav-->
+        <button class="toggle-nav">
+            <i class="bi bi-list"></i>
+        </button>
+        <nav class="nav-bar">
+          <div class="nav-bar__column category">
+            <span>Home</span>
+            <span>Spring</span>
+            <span>Summer</span>
+            <span>Fall</span>
+            <span>Winter</span>
+          </div>
+          <div class="nav-bar__column">
+            <span>Krystle Photo Book</span>
+          </div>
+          <div class="nav-bar__column basket">
+            <i class="fa-solid fa-bag-shopping fa-2x"></i>
+          </div>
+        </nav>
+
+
+        <!--slideshow-container-->
+      <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+              <img 
+                src="book.img/cloud.jpg"/>
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="book.img/bus.jpg"/>
+          </div>
+
+          <div class="mySlides fade">
+            <img 
+              src="book.img/flower.jpg"/>
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="book.img/ita.jpg"/>
+          </div>
+      </div>
+
+        <!-- Next and previous buttons -->
+      <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
+      <a class="next" onclick="moveSlides(1)">&#10095;</a>
+    </div>
+    <br/>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+        <!--pho_list-->
+        <section class="pholist">
+          <div class="photolist_center">
+
+            <article class="pho_container">
+              <div class="pho_obj">
+                <div class="pho_icons">
+                  <img src="book.img/sea.jpg" alt="" />
+                    <a href="#" class="pho_contents">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a href="#" class="pho_print">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    </a>
+                </div>
+                <p class="pho_name"> [wave] </p>
+                <h4 class="pho_price">[R size] 1,000원</h4>
+              </div>
+            </article>
+
+            <article class="pho_container">
+              <div class="pho_obj">
+                <img src="book.img/View.jpg" alt="" />
+                <div class="pho_icons">
+                  <a href="#" class="pho_contents">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                  <a href="#" class="pho_print">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </a>
+                </div>
+                <p class="pho_name">[Night]</p>
+                <h4 class="pho_price">[R size] 1,000원</h4>
+              </div>
+            </article>
+
+            <article class="pho_container">
+              <div class="pho_obj">
+                <img src="book.img/universe.jpg" alt="" />
+                <div class="pho_icons">
+                  <a href="#" class="pho_contents">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                  <a href="#" class="pho_print">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </a>
+                </div>
+                <p class="pho_name">[universe]</p>
+                <h4 class="pho_price">[R size] 1,000원</h4>
+              </div>
+            </article>
+
+            <article class="pho_container">
+              <div class="pho_obj">
+                <img src="book.img/tulip.jpg" alt="" />
+                <div class="pho_icons">
+                  <a href="#" class="pho_contents">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                  <a href="#" class="pho_print">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </a>
+                </div>
+                <p class="pho_name">[Tulip]</p>
+                <h4 class="pho_price">[R size] 1,000원</h4>
+              </div>
+            </article>
+
+            <article class="pho_container">
+              <div class="pho_obj">
+                <img src="book.img/Salon.png" alt="" />
+                <div class="pho_icons">
+                  <a href="#" class="pho_contents">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                  <a href="#" class="pho_print">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </a>
+                </div>
+                <p class="pho_name">[Pink Salon]</p>
+                <h4 class="pho_price">[R size] 1,000원</h4>
+              </div>
+            </article>
+
+            <article class="pho_container">
+              <div class="pho_obj">
+                <img src="book.img/Kit.png" alt="" />
+                <div class="pho_icons">
+                  <a href="#" class="pho_contents">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                  <a href="#" class="pho_print">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </a>
+                </div>
+                <p class="pho_name">[Kit]</p>
+                <h4 class="pho_price">[R size] 1,000원</h4>
+              </div>
+            </article>
+
+
+          </div>
+        </section>
+
+        <!--side bar-->
+        <div class="side_bar_overlay">
+          <aside class="side_bar">
+            <div class="side_bar_close">
+              <button>
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="side_bar_title">
+              <span>Your Photo basket for print</span>
+            </div>
+            <div class="side_bar_list"></div>
+            <div class="side_bar_list_buy">
+              <input type="submit" name="buy" id="buy" value="장바구니" />
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <!--footer-->
+    <footer>
+      <div class="ent_info">
+        <span>사업자 번호: 1111-1111</span>
+        <span>고객 문의 : 02-333-4444</span>
+      </div>
+    </footer>
+
+    <!--link-->
+    <script src="book.js/slideshow.js"></script>
+    <script src="book.js/side_bar.js"></script>
+    <script
+      src="https://kit.fontawesome.com/49b5c69611.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
